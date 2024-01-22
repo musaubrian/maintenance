@@ -154,7 +154,7 @@ func (g gnoDets) RunCommandsSync() {
 			go printOutput(stdErr)
 
 			if err := cmd.Wait(); err != nil {
-				Log(ERROR, "IN WAIT: "+err.Error())
+				Log(ERROR, err.Error())
 			}
 
 		}

@@ -1,6 +1,6 @@
 package view
 
-templ Main() {
+templ Main(email string) {
 	<!DOCTYPE html>
 	<html lang="en">
 		<head>
@@ -32,7 +32,7 @@ templ Main() {
 				<p class="text-gray-500 dark:text-gray-400 mt-4 text-xl text-center">
 					For any urgent inquiries, please reach out at
 					<a class="underline text-blue-400 dark:text-blue-300" href="mailto:me@nabri.xyz">
-						me@nabri.xyz
+						{ email }
 					</a>
 				</p>
 			</div>
